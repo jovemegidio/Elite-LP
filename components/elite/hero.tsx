@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ArrowUpRight, TrendingUp, Users, Target } from "lucide-react"
+import { BrandIcon } from "./logo"
 
 export function Hero() {
   return (
@@ -86,9 +87,7 @@ export function Hero() {
 
             {/* Floating notification card */}
             <div className="absolute -left-4 top-12 hidden animate-float rounded-xl border border-primary/30 bg-card/95 p-4 shadow-2xl backdrop-blur-md md:flex md:items-center md:gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/20">
-                <TrendingUp className="h-5 w-5 text-primary" />
-              </div>
+              <BrandIcon className="h-10 w-12" />
               <div>
                 <p className="text-sm font-semibold text-foreground">Venda realizada</p>
                 <p className="text-xs text-muted-foreground">Comissão: R$ 294,24</p>

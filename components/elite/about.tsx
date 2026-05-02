@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { CheckCircle2 } from "lucide-react"
+import { BrandIcon } from "./logo"
 
 const highlights = [
   "Gestão de Tráfego Pago",
@@ -93,9 +94,7 @@ function NotificationCard({ className, delay }: { className?: string; delay?: st
       style={{ animationDelay: delay }}
     >
       <div className="flex items-center gap-3">
-        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-primary to-accent">
-          <span className="font-display text-sm font-bold text-background">E</span>
-        </div>
+        <BrandIcon className="h-9 w-11" />
         <div>
           <p className="text-xs font-semibold text-foreground">Venda realizada</p>
           <p className="text-[11px] text-muted-foreground">Comissão: R$ 294,24</p>

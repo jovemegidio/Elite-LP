@@ -1,4 +1,5 @@
 import { CheckCircle2, XCircle } from "lucide-react"
+import { BrandIcon } from "./logo"
 
 const traditional = [
   "Abordagem genérica, sem personalização para o seu negócio.",
@@ -72,8 +73,9 @@ export function Comparison() {
           <div className="relative overflow-hidden rounded-2xl border border-primary/30 bg-card/60 p-8 backdrop-blur-sm shadow-[0_0_60px_oklch(0.65_0.22_255_/_0.15)]">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
             <div className="relative">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-accent px-5 py-2">
-                <span className="text-sm font-bold text-background">Elite Company Digital</span>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-background/70 px-4 py-2">
+                <BrandIcon className="h-7 w-9" />
+                <span className="text-sm font-bold text-foreground">Elite Company Digital</span>
               </div>
 
               <ul className="space-y-5">
